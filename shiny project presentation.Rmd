@@ -1,0 +1,44 @@
+---
+title: "Wine prediction project"
+author: "Sarah Shikangah"
+date: "June 27, 2017"
+output: ioslides_presentation
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+## Introduction to Wine App
+
+ An interactive application featuring the use of Shiny to present statistical data visualization and analysis of the effect of ingredients to the quality outcome of the wine. By use of drop down menu, a usser can select individual ingredient to evaluate the relationship with quality. A statistical logistic regression of all the variables(ingredients) is also provided in form of summary.
+ 
+ ### Required packages
+ ## Get data, Clean and subset
+
+```{r, packages, echo=TRUE, warning=FALSE, message=FALSE}
+library(rsconnect)
+library(shiny)
+dat <- read.csv("https://archive.ics.uci.edu/ml/machine-learning-databases/wine-quality/winequality-red.csv", sep = ";")
+dat$quality <- as.factor(dat$quality)
+anyNA(dat)
+
+```
+
+## Create an account on shinyapps.io
+- Will need signup
+- install rsconnect package and load;
+  library(rsconnect). follow the steps provided on shiny account to finish setting up.
+- deployApp by clicking on publish app select shiny to connect.
+
+
+## Publication
+1. Shinyapps.io
+https://smshikangah.shinyapps.io/Shinyapp-project/
+ 
+ 
+2. Github
+
+
+
+
