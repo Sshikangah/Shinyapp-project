@@ -38,7 +38,7 @@ https://smshikangah.shinyapps.io/Shinyapp-project/
  
  
 2. Github
-
+https://github.com/Sshikangah/Shinyapp-project
 
 
 
